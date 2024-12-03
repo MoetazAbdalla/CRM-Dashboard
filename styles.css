@@ -1,0 +1,475 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: #0f1c2a;
+    display: inline-flex;
+    align-items: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+i {
+    margin-right: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    background-color: #0d0344; /* You can adjust this color as needed */
+    padding: 0px 50px; /* Adding some padding on left and right */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; /* Adjust padding if needed */
+}
+
+.contact-info, .social-links {
+    display: flex;
+    gap: 35px; /* Spacing between the links */
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center; /* Center the logo */
+    align-items: center;
+}
+
+.logo {
+    height: 80px; /* Adjust the size of the logo as necessary */
+    padding-right: 100px;
+}
+
+.contact-info a, .social-links a {
+    color: white;
+    font-size: 16px; /* Adjust font size */
+}
+
+.contact-info a i, .social-links a i {
+    margin-right: 5px; /* Space between icon and text */
+    color: white; /* Adjust the color of icons */
+}
+
+.social-links a i {
+    font-size: 24px; /* Size for social icons */
+}
+
+/* Main - Login and Create Account Containers */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.login-box {
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    margin-right: 10px;
+    color: #555;
+}
+
+.input-group input, .input-group select {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #3734e4;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.login-btn:hover {
+    background-color: #0a041f;
+}
+
+.account-options {
+    margin-top: 15px;
+}
+
+.account-options a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+.account-options a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    padding: 50px 30px;
+    color: #ccc;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: 20px;
+}
+
+.brand-column {
+    flex: 1.5; /* Give extra space for the brand column */
+}
+
+.Footer-logo 
+{
+
+    height: 50%;
+    width: 300px;
+    opacity: bold;
+}
+
+.footer-column h3 {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    color: #666;
+}
+
+.social-links a {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.footer-column p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1023px) {
+    .top-bar {
+        padding: 0 30px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .login-box {
+        width: 90%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .top-bar {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .login-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+/* Reset Form Styles */
+.reset-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.reset-box {
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.reset-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.reset-form .required {
+    color: red;
+}
+
+.reset-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.reset-form p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #004ecb;
+}
+
+
+/* Reset Form Styles */
+.reset-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.reset-box {
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Match box-shadow */
+    text-align: center;
+}
+
+.login-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.reset-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 50px; /* More rounded corners */
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #555;
+    margin-right: 10px;
+}
+
+.input-group i {
+    margin-right: 10px;
+}
+
+.reset-form input {
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+}
+
+.reset-form input::placeholder {
+    color: #aaa;
+}
+
+.reset-form p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #3734e4;
+    border: none;
+    color: white;
+    border-radius: 50px; /* Rounded button */
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.submit-btn:hover {
+    background-color: #0a041f;
+}
+
+.account-options {
+    margin-top: 10px;
+}
+
+.account-options a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Modal Styles */
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
